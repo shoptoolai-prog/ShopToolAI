@@ -1,0 +1,6 @@
+{
+  "name": "ShopToolAI",
+  "description": "Discover. Compare. Buy Smarter. Find Everything From Any Reel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
