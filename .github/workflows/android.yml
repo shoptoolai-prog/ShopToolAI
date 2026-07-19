@@ -21,9 +21,11 @@ jobs:
           java-version: '17'
           cache: gradle
 
-      - name: Grant execute permission
+            - name: Grant execute permission
         run: chmod +x gradlew
-        
+
+      - name: Add Gemini API Key
+        run: echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" > app/.env
       - name: Create debug keystore
         run: |
           keytool -genkeypair \
